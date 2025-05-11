@@ -39,7 +39,10 @@ This Terraform configuration sets up a basic web server infrastructure in AWS wi
    ```
    terraform apply
    ```
-5. Confirm by typing "yes" when prompted
+   
+   ![Screenshot_11-5-2025_16141_potential-bassoon-v56v975jgxrfw467 github dev](https://github.com/user-attachments/assets/278a9187-4f31-4701-bf4e-6a0b9d8948f7)
+   
+6. Confirm by typing "yes" when prompted
 
 ## Accessing the Web Server
 
@@ -49,7 +52,7 @@ After deployment, the public IP address of the web server will be displayed as a
 http://<public_ip>
 ```
 
-![Screenshot 2025-05-11 155614](https://github.com/user-attachments/assets/0fa04364-f743-41e9-b125-23a508e274a6)
+![Screenshot 2025-05-11 155614](https://github.com/user-attachments/assets/d770a481-9dde-4944-b6d9-b2ace8f3bb7e)
 
 To SSH into the instance:
 
