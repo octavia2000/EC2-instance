@@ -76,9 +76,16 @@ resource "aws_instance" "web" {
   vpc_security_group_ids      = [aws_security_group.web_sg.id]
   associate_public_ip_address = true
   key_name                    = "server.kp" # Ensure this key exists in your AWS EC2 Key Pairs
+
+  user_data = <<-EOF
+              #!/bin/bash
+              sudo apt update
+              sudo apt install nginx -y
+              sudo systemctl enable nginx
+              sudo systemctl start nginx
+              EOF
 }
  
-
 # Output the public IP of the EC2 instance
 output "public_ip" {
   value = aws_instance.web.public_ip
