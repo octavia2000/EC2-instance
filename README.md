@@ -49,6 +49,8 @@ After deployment, the public IP address of the web server will be displayed as a
 http://<public_ip>
 ```
 
+![Screenshot 2025-05-11 155614](https://github.com/user-attachments/assets/0fa04364-f743-41e9-b125-23a508e274a6)
+
 To SSH into the instance:
 
 ```
